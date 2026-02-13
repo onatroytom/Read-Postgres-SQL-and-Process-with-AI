@@ -2,7 +2,7 @@
 using Microsoft.SemanticKernel.ChatCompletion;
 
 // 1. Setup Database Connection
-string connectionString = "";//Postgres Connection String
+string connectionString = "Host=xxxxx;Port=xxxxx;Database=your_db;Username=your_username;Password=your_password";//Postgres Connection String
 var dbService = new DatabaseService(connectionString);
 
 // 2. Configure the Cloud-Hosted Open Source Model
@@ -63,4 +63,5 @@ while (true)
     {
         Console.WriteLine($"AI Error: {ex.Message}");
     }
+
 }
